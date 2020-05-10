@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "69b35c94-1409-44cd-a103-bc01cb26d738",
+		"name": "libraryManagementServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4041/myshelf/addBook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serial_no\": 3114,\n    \"name\": \"Steve Jobs\",\n    \"author\": \"Walter Isaacson\",\n    \"category\": \"Biography\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4040/myshelf/addBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"myshelf",
+						"addBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4040/myshelf/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4040/myshelf/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"myshelf",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4040/myshelf/getBook/1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4040/myshelf/getBook/1234/The Diary of a Young Girl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"myshelf",
+						"getBook",
+						"1234",
+						"The Diary of a Young Girl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4040/myshelf/getAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4040/myshelf/getAllBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"myshelf",
+						"getAllBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4040/myshelf/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serial_no\": 3114,\n    \"name\": \"Steve Jobs\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/myshelf/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"myshelf",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4040/myshelf/getBooksByName/Steve Jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4040/myshelf/getBooksByName/Steve Jobs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"myshelf",
+						"getBooksByName",
+						"Steve Jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4040/myshelf/updateBook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serial_no\": 3214,\n    \"name\": \"Steve Jobs\",\n    \"author\": \"Walter Isaacson\",\n    \"category\": \"Biography\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/myshelf/updateBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"myshelf",
+						"updateBook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

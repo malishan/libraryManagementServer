@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "5dc97ad2219259ea18933360"
+  },
+  "serialNo": 1234,
+  "bookName": "The Diary of a Young Girl",
+  "author": "Anne Frank",
+  "category": "Biography",
+  "insertTime": {
+    "$date": "2019-11-11T15:14:26.117Z"
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "-62135596800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5dc97b23219259ea18933361"
+  },
+  "serialNo": 3214,
+  "bookName": "Steve Jobs",
+  "author": "Walter Isaacson",
+  "category": "Biography",
+  "insertTime": {
+    "$date": "2019-11-11T15:15:47.314Z"
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "-62135596800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5dc97b92219259ea18933362"
+  },
+  "serialNo": 1423,
+  "bookName": "The Beautiful Ones",
+  "author": "Prince",
+  "category": "Biography",
+  "insertTime": {
+    "$date": "2019-11-11T15:17:38.028Z"
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "-62135596800000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5dc97bc6219259ea18933363"
+  },
+  "serialNo": 1423,
+  "bookName": "The Story of My Experiments with Truth",
+  "author": "Mahatma Gandhi",
+  "category": "Biography",
+  "insertTime": {
+    "$date": "2019-11-11T15:18:30.673Z"
+  },
+  "updateTime": {
+    "$date": {
+      "$numberLong": "-62135596800000"
+    }
+  }
+}]
