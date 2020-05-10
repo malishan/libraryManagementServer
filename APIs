@@ -1,0 +1,72 @@
+curl -X GET \
+  http://localhost:4040/myshelf/ \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Postman-Token: 842de0b0-2303-4c86-8971-6f3e79eaf8b0' \
+  -H 'cache-control: no-cache'
+
+
+
+curl -X POST \
+  http://localhost:4040/myshelf/addBook \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: ee2bb86b-e14b-4c1d-8521-5971fd45a9e7' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"serial_no": 3114,
+    "name": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "category": "Biography"
+}'
+
+
+
+curl -X GET \
+  http://localhost:4040/myshelf/getBook/1234/The%20Diary%20of%20a%20Young%20Girl \
+  -H 'Postman-Token: dfe909d3-83ac-4a6a-b7cd-c98c305a1e5e' \
+  -H 'cache-control: no-cache'
+
+
+
+
+curl -X GET \
+  http://localhost:4040/myshelf/getAllBooks \
+  -H 'Postman-Token: 584a57ab-4b36-4fbe-9a42-d7ec20f4f417' \
+  -H 'cache-control: no-cache'
+
+
+
+
+curl -X DELETE \
+  http://localhost:4040/myshelf/delete \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: fecb9576-75b7-4c71-8768-5a21ea5b3365' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"serial_no": 3114,
+    "name": "Steve Jobs"
+}'
+
+
+
+
+
+curl -X GET \
+  http://localhost:4040/myshelf/getBooksByName/Steve%20Jobs \
+  -H 'Postman-Token: fd758e71-9753-40bf-b2d6-dedc8af129d8' \
+  -H 'cache-control: no-cache'
+
+
+
+
+
+curl -X POST \
+  http://localhost:4040/myshelf/updateBook \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 9e342eeb-e6ba-4b8a-84fb-eac449b578bc' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"serial_no": 3214,
+    "name": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "category": "Biography"
+}'
